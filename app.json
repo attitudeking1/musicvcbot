@@ -1,40 +1,43 @@
 {
-    "name": "Telegra.ph Uploader Bot",
-    "description": "A bot that can upload medias to Telegra.ph",
-    "logo": "https://telegra.ph/file/541efcde8cc63c9971b0f.jpg",
+    "name": "Musicvcbot",
+    "description": "An Open-source PyTgCalls based Pyrogram bot to play music in voice chats",
     "keywords": [
-        "Telegra.ph",
-        "Uploader",
-        "Telegram Bot",
-        "Benchamxd"
+      "telegram",
+      "voicechat",
+      "pytgcalls",
+      "productivity"
     ],
-    "website": "https://benchamxd.me",
-    "repository": "https://github.com/attitudeking1/telegraph",
-    "success_url": "https://telegram.dog/ABOUT_VEDMAT_OWNER",
+    "repository": "https://github.com/attitudeking1/musicvcbot",
+    "stack": "container",
     "env": {
-        "TG_BOT_TOKEN": {
-            "description": "You Telegram Bot Token from @BotFather",
-            "value": ""
-        },
-        "API_HASH": {
-            "description": "Your API Hash from my.telegram.org",
-            "value": ""
-        },
-        "APP_ID": {
-            "description": "Your API ID from my.telegram.org",
-            "value": ""
-        }
-    },
-    "addons": [],
-    "buildpacks": [
-        {
-            "url": "heroku/python"
-        }
-    ],
-    "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "free"
-        }
+      "API_ID": {
+        "description": "Get this value from my.telegram.org!",
+        "value": ""
+      },
+      "API_HASH": {
+        "description": "Get this value from my.telegram.org! ",
+        "value": ""
+      },
+      "SESSION_NAME": {
+        "description": "Get this value from https://replit.com/@attitudeking1/Musicbot2 ",
+        "value": ""
+      },
+      "BOT_TOKEN": {
+        "description": " Make a bot at http://telegram.dog/BotFather and get the token of your bot.",
+        "value": ""
+      },
+      "BOT_NAME": {
+        "description": " Add your bot name by default it is êvilẞø†.",
+        "value": "êvilẞø†"
+      },
+      "SUDO_USERS": {
+        "description": "List of ID of those who can pause, stop and clear queue,separated by space.",
+        "value": "1642113657 "
+      },
+      "DURATION_LIMIT": {
+        "description": "Maximum duration of songs that users can request(in minutes).",
+        "value": "10",
+        "required": false
+      }
     }
 }
