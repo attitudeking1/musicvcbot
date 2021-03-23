@@ -10,4 +10,4 @@ PYTHON TELEGRAM MUSIC BOT
 
 
 
-[![VEDMAT] (https://telegra.ph/file/f89e0467dd798f694e06b.jpg)
+![VEDMAT MUSICBOT](https://telegra.ph/file/f89e0467dd798f694e06b.jpg)
