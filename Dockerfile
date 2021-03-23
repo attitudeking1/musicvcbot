@@ -1,3 +1,4 @@
+
 FROM nikolaik/python-nodejs:python3.9-nodejs15-slim
 
 ENV DEBIAN_FRONTEND noninteractive
@@ -7,8 +8,8 @@ RUN apt-get update -y && \
         python3-pip \
         git \
         ffmpeg && \
-    git clone https://github.com/attitudeking1/musicvcbot.git && \
-    cd musicvcbot && \
+    git clone https://github.com/jattpawan/evilbot.git && \
+    cd evilbot && \
     git clone https://github.com/pytgcalls/pytgcalls.git && \
     cd pytgcalls && \
     npm install && \
@@ -17,9 +18,9 @@ RUN apt-get update -y && \
     npm install && \
     cd ../../ && \
     pip3 install -r requirements.txt && \
-    cp -r ./pytgcalls /musicvcbot/ && \
-    cd /musicvcbot && \
+    cp -r ./pytgcalls /evilbot/ && \
+    cd /evilbot && \
     pip3 install -U -r requirements.txt
 
-WORKDIR /musicvcbot
+WORKDIR /evilbot
 CMD ["python3" "main.py"]
